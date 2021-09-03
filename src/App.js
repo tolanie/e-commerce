@@ -2,7 +2,7 @@ import { div } from 'prelude-ls';
 import React from 'react';
 import './App.css';
 
-import HomePage from './homepage.component';
+import HomePage from './pages/Homepage/homepage.component';
 
 function App() {
   return <div>
