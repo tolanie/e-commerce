@@ -8,9 +8,9 @@ import HomePage from './pages/Homepage/homepage.component';
 
 import ShopPage from './pages/shop/shop.component';
 
-import Header from './components/Header/header-component.jsx';
+import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 
-
+import Header from './components/Header/header-component';
 
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
       <switch>
       <Route exact path='/' component = { HomePage } />
       <Route path='/shop' component = { ShopPage } />
+      <Route exact path='/signin' component = { SignInAndSignUpPage } />
       </switch>
     </div>
   );
