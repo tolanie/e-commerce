@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Route } from 'react-router-dom';
+import { Route, Switch} from 'react-router-dom';
 
 import './App.css';
 
@@ -17,11 +17,11 @@ function App() {
   return (
     <div>
       <Header/>
-      <switch>
+      <Switch>
       <Route exact path='/' component = { HomePage } />
       <Route path='/shop' component = { ShopPage } />
       <Route exact path='/signin' component = { SignInAndSignUpPage } />
-      </switch>
+      </Switch>
     </div>
   );
   
