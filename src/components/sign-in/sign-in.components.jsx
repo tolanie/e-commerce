@@ -52,7 +52,7 @@ class SignIn extends React.Component {
             required
           />
 
-          <CustomButton type="submit"/> Sign in<CustomButton/>
+          <CustomButton type="submit"> Sign in</CustomButton>
         </form>
       </div>
     );
