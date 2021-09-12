@@ -1,5 +1,7 @@
 import React from "react";
 
+import firebase from "@firebase/app-compat";
+
 import FormInput from "../form-input/form-input.components";
 
 import CustomButton from "../custom-button/custom-button-component";
@@ -23,7 +25,7 @@ class SignIn extends React.Component {
       const {email, password} = this.state;
 
       try{
-        await auth.signInWithEmailLAndPassword(email, password)
+        await firebase.auth().signInWithEmailLAndPassword(email, password)
         this.setState({email:'', password:''})
 
       }catch (error){
@@ -62,7 +64,7 @@ class SignIn extends React.Component {
             required
           />
         <div name='buttons'>
-        <CustomButton type="submit"> Sign in</CustomButton>
+        <CustomButton type='submit'> Sign in</CustomButton>
           <CustomButton onClick= {signInWithGoogle} isGoogleSignIn> 
           Sign in With Google
           </CustomButton>
